@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting  up the world.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Hero">
+
+<nav>
+    <img src="menu.png" class="menu-img" alt="">
+    <img src="logo.png" class="logo-img" alt="">
+    <ul>
+        <li><a href="#">Meditations</a></li>
+        <li><a href="#">Yoga</a></li>
+        <li><a href="#">Recreation</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <button type="button" onclick="togglebtn()" id="btn" class=""><span></span></button>
+</nav>
+
+<div class="lamp-container">
+    <img src="lamp.png" class="lamp">
+    <img src="light.png" class="light" id="light">
+</div>
+
+<div class="text-container">
+    <h1 style="font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><span style="color: yellow;">Illuminate </span>the darkness,<br> just by <span style="color: yellow;">a click...</span></h1>
+    <p style="margin-top: 2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">When the darkness of problems and negativities cloud your mind ,<br> The light switch of hope illuminates the path for your victory!</p>
+    <div class="control">
+       <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;">connect your soul</p>
+       <div class="line"><span></span></div>
+       <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: aqua;">50% done</p>
+    </div>
+    <a href="#">Click for more</a>
+</div>
+
+<script>
+ var btn = document.getElementById("btn");
+ var light =document.getElementById("light");
+ 
+ function togglebtn(){
+    btn.classList.toggle("active");
+    light.classList.toggle("on");
+
+ }
+</script>
+
+</div>
+</body>
+</html>

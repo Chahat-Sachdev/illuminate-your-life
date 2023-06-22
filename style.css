@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box; 
+   
+}
+
+.Hero{
+    background-color: #1d2026;
+    min-height: 100%;
+    width: 100%;
+    color: white;
+    position: fixed;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo-img{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+ nav button{
+background-color: #efefef;
+height: 30px;
+width: 60px;
+border-radius: 20px;
+border:0;
+outline: 0;
+cursor: pointer;
+transition: background 0.5s;
+margin-left: 30px;
+}
+
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+border-radius: 50%;
+margin-left: 2px;
+transition: background 0.5s, margin-left 0.5s;
+}
+
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+
+}
+.light{
+    position: absolute;
+    top:97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 3%;
+    margin-left: 50%;
+
+}
+
+.text-container h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 15px 15px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: 520;
+    border-radius: 30px;
+    box-shadow: 0  0 10px  rgb(0, 0, 0);
+    margin-top: 35px;
+}
+
+.text-container a:hover{
+    box-shadow: 0  0 10px  rgb(126, 126, 124);
+}
+.control{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.control .line{
+    width: 250px;
+    height: 6px;
+    background:white ;
+    margin: 20px 20px;
+    margin-top: 22px;
+    border-radius: 5px;
+}
+.control .line span{
+    width: 50%;
+    height: 6px;
+    margin-top: px;
+    border-radius: 2px;
+    background-color: #00986f;
+    display: block;
+}
+.active{
+    background:turquoise;
+
+}
+.active span{
+    background: white;
+    margin-left: 31px;
+
+
+}
+.on{
+    opacity: 1;
+
+}
